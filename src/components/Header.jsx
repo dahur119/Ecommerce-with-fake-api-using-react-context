@@ -6,6 +6,7 @@ import { cartContext } from '../context/CartContext'
 import { Link } from 'react-router-dom'
 import {IoIosCompass} from 'react-icons/io'
 
+
 function Header() {
   const [isActive, setIsActive] = useState(false)
     const {isOpen,setIsOpen} = useContext(SidebarContext)
@@ -17,7 +18,7 @@ function Header() {
       })
     })
   return (
-    <header className={`${isActive ? 'bg-white py-6 shadow-md' : 'bg-none py-6'} fixed w-full z-10 transition-all`}>
+    <header className={`${isActive ? 'bg-white py-6  shadow-md' : 'bg-none py-6'} fixed w-full z-10 transition-all`}>
       <div className='container mx-auto flex items-center justify-between h-full'>
       <Link to={'/'}>
           <div>
